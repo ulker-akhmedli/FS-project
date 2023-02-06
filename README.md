@@ -1,3 +1,3 @@
 # FS Project
 
-[Live link](https://ulker-akhmedli.github.io/fs-project/)
+[Live link](https://ulker-akhmedli.github.io/Fs-project/)
