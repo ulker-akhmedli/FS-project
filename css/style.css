@@ -1,0 +1,1093 @@
+@import url("https://fonts.cdnfonts.com/css/euclid-circular-a");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Euclid Circular A", sans-serif;
+}
+
+button {
+  font-family: "Euclid Circular A", sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  padding: 24px 112px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #fbf5f2;
+}
+header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .logo .title {
+  font-weight: 400;
+  font-size: 28px;
+  color: #343434;
+}
+header nav ul.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 56px;
+}
+header nav ul.navigation li.link a {
+  font-weight: 400;
+  font-size: 16px;
+  color: #343434;
+}
+header nav ul.navigation li.link.active a {
+  padding: 15px 32px;
+  background-color: #43ba7f;
+  border-radius: 24px;
+  font-size: 14px;
+  color: #fff;
+}
+header nav ul.navigation button.hamburger {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  header {
+    padding: 16px;
+  }
+  header .logo img {
+    width: 33px;
+    height: 33px;
+  }
+  header .logo .title {
+    font-weight: 400;
+    font-size: 20px;
+  }
+  header nav ul.navigation {
+    gap: 16px;
+  }
+  header nav ul.navigation li.link {
+    display: none;
+  }
+  header nav ul.navigation li.link.active {
+    display: block;
+  }
+  header nav ul.navigation li.link.active a {
+    padding: 11px 28px;
+  }
+  header nav ul.navigation button.hamburger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: transparent;
+    border: none;
+  }
+}
+footer {
+  background-color: #0d1118;
+  padding: 56px 112px;
+  color: #6e7581;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+footer .column:nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 34px;
+}
+footer .column:nth-child(1) .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+footer .column:nth-child(1) .logo .title {
+  font-weight: 400;
+  font-size: 28px;
+  color: #fff;
+}
+footer .column:nth-child(1) .copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+footer .column:nth-child(1) .copyright p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #3d4045;
+}
+footer .column:nth-child(1) .social-medias {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 24px;
+}
+footer .column ul.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+}
+footer .column ul.navigation li.link a {
+  font-weight: 400;
+  font-size: 16px;
+  color: #6e7581;
+}
+footer .column:nth-child(4) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+}
+footer .column:nth-child(4) .message {
+  font-weight: 400;
+  font-size: 16px;
+}
+footer .column:nth-child(4) form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer .column:nth-child(4) form input {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  border-radius: 16px;
+  min-width: 248px;
+}
+footer .column:nth-child(4) form input::-webkit-input-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  color: #c0c0c0;
+}
+footer .column:nth-child(4) form input::-moz-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  color: #c0c0c0;
+}
+footer .column:nth-child(4) form input:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  color: #c0c0c0;
+}
+footer .column:nth-child(4) form input::-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  color: #c0c0c0;
+}
+footer .column:nth-child(4) form input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  color: #c0c0c0;
+}
+footer .column:nth-child(4) form button {
+  border: none;
+  padding: 12px 15px;
+  border-radius: 16px;
+  background-color: #43ba7f;
+  font-weight: 400;
+  font-size: 14px;
+  color: #0d1118;
+  cursor: pointer;
+}
+footer .column:nth-child(4) .email {
+  margin-top: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
+}
+footer .column:nth-child(4) .email span {
+  font-weight: 400;
+  font-size: 16px;
+}
+footer .mobile-logo {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  footer {
+    padding: 0;
+    padding-top: 40px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  footer .column:nth-child(2) {
+    width: 50%;
+    padding-left: 16px;
+  }
+  footer .column:nth-child(3) {
+    width: 50%;
+    padding-right: 16px;
+  }
+  footer .column:nth-child(1) {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 100%;
+    gap: 0;
+  }
+  footer .column:nth-child(1) .social-medias {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 48px 0 24px 0;
+  }
+  footer .column:nth-child(1) .logo {
+    display: none;
+  }
+  footer .column:nth-child(1) .copyright {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    padding: 24px 63px;
+    white-space: nowrap;
+    border-top: 1px solid #343434;
+  }
+  footer .column:nth-child(1) .copyright p {
+    color: #6e7581;
+  }
+  footer .column:nth-child(4) {
+    width: 100%;
+    margin-top: 48px;
+    padding: 0 16px;
+  }
+  footer .column:nth-child(4) form input {
+    border-radius: 9px;
+  }
+  footer .column:nth-child(4) form button {
+    border-radius: 9px;
+    color: #fff;
+  }
+  footer .column:nth-child(4) .email {
+    margin-top: 10px;
+  }
+  footer .mobile-logo {
+    display: block;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 8px;
+    margin-bottom: 56px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .mobile-logo .title {
+    color: #fff;
+    font-weight: 500;
+    font-size: 25px;
+  }
+  footer .mobile-logo img {
+    width: 40px;
+    height: 40px;
+  }
+}
+.container.aboutUs .about {
+  margin: 42px 0 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 42px;
+  text-align: center;
+}
+.container.aboutUs .about h3 {
+  font-weight: 400;
+  font-size: 34px;
+}
+.container.aboutUs .about p {
+  font-weight: 400;
+  font-size: 16px;
+  max-width: 800px;
+  line-height: 36px;
+}
+.container.aboutUs .goals {
+  background-color: #02172c;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 56px 216px;
+}
+.container.aboutUs .goals .column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 24px;
+}
+.container.aboutUs .goals .column img {
+  width: 40px;
+  height: 40px;
+}
+.container.aboutUs .goals .column h5 {
+  margin-top: 16px;
+  font-weight: 400;
+  font-size: 20px;
+}
+.container.aboutUs .goals .column p {
+  font-weight: 400;
+  line-height: 24px;
+  font-size: 16px;
+}
+.container.aboutUs .goals .column.mission p {
+  max-width: 485px;
+}
+.container.aboutUs .goals .column.vision p {
+  max-width: 385px;
+}
+.container.aboutUs .values {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 88px;
+}
+.container.aboutUs .values .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 24px;
+  color: #343434;
+}
+.container.aboutUs .values .content h5.title {
+  margin-top: 80px;
+  margin-bottom: 24px;
+  font-weight: 400;
+  font-size: 24px;
+}
+.container.aboutUs .values .content .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 24px;
+  background-color: #faf4e7;
+  border-radius: 16px;
+  padding: 28px;
+  min-width: 800px;
+}
+.container.aboutUs .values .content .row .circle {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+.container.aboutUs .values .content .row .circle.green {
+  background-color: #43ba7f;
+}
+.container.aboutUs .values .content .row .circle.yellow {
+  background-color: #fcc231;
+}
+.container.aboutUs .values .content .row .circle.orange {
+  background-color: #ff8145;
+}
+.container.aboutUs .values .content .row .circle.violet {
+  background-color: #c282d1;
+}
+.container.aboutUs .values .content .row .circle.blue {
+  background-color: #3878f2;
+}
+.container.aboutUs .values .content .row .text {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+@media (max-width: 576px) {
+  .container.aboutUs .about {
+    margin: 32px 0 48px 0;
+    gap: 0;
+  }
+  .container.aboutUs .about p {
+    padding: 32px 16px 0px 16px;
+  }
+  .container.aboutUs .goals {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+    gap: 16px;
+  }
+  .container.aboutUs .goals .column {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 360px;
+  }
+  .container.aboutUs .goals .column h5 {
+    text-align: center;
+    margin-top: 8px;
+  }
+  .container.aboutUs .goals .column img {
+    margin-top: 48px;
+  }
+  .container.aboutUs .goals .column p {
+    width: 330px;
+    text-align: center;
+    margin-top: 0;
+    line-height: 24px;
+  }
+  .container.aboutUs .goals .column.vision {
+    margin-bottom: 48px;
+  }
+  .container.aboutUs .values {
+    margin-bottom: 72px;
+  }
+  .container.aboutUs .values .content {
+    gap: 16px;
+  }
+  .container.aboutUs .values .content h5.title {
+    margin: 0;
+    font-weight: 500;
+    text-align: center;
+    padding: 48px 0 24px 0;
+  }
+  .container.aboutUs .values .content .row {
+    gap: 16px;
+    padding: 16px;
+    min-width: auto;
+    border-radius: 8px;
+    margin: 0 16px 0 16px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container.aboutUs .values .content .row .text {
+    font-size: 16px;
+  }
+  .container.aboutUs .values .content .row .circle {
+    width: 12px;
+    height: 12px;
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+  }
+}
+.container.blogContent {
+  max-width: 1220px;
+  margin: 0 auto;
+}
+.container.blogContent .blog {
+  text-align: center;
+}
+.container.blogContent .blog .title {
+  font-weight: 400;
+  font-size: 24px;
+  width: 560px;
+  margin: 48px auto 24px auto;
+}
+.container.blogContent .blog p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #8b8b8b;
+  margin-bottom: 32px;
+}
+.container.blogContent .banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.container.blogContent .banner p {
+  margin: 48px 0;
+  max-width: 800px;
+  text-align: left;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #343434;
+}
+.container.blogContent .banner img {
+  width: 1008px;
+}
+.container.blogContent .advice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.container.blogContent .advice .questions {
+  max-width: 800px;
+}
+.container.blogContent .advice .questions img {
+  margin: 32px 0 56px 0;
+}
+.container.blogContent .advice .quiz {
+  max-width: 800px;
+  margin-bottom: 64px;
+}
+.container.blogContent .advice .quiz img {
+  margin-top: 32px;
+}
+.container.blogContent .advice h5.title {
+  font-weight: 400;
+  font-size: 20px;
+  color: #43ba7f;
+  text-align: left;
+}
+.container.blogContent .advice p {
+  font-weight: 400;
+  line-height: 24px;
+  font-size: 16px;
+  color: #343434;
+  margin-top: 32px;
+}
+.container.blogContent .social-networks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 136px;
+  padding-top: 64px;
+  border-top: 1px solid #e6e8ea;
+}
+.container.blogContent .social-networks .title {
+  font-weight: 400;
+  font-size: 34px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 72px;
+}
+.container.blogContent .social-networks .social-network {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 24px;
+}
+.container.blogContent .social-networks .social-network img {
+  width: 592px;
+}
+.container.blogContent .social-networks .social-network .subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  color: #43ba7f;
+}
+.container.blogContent .social-networks .social-network .text {
+  font-weight: 400;
+  font-size: 24px;
+  width: 480px;
+  line-height: 32px;
+  color: #343434;
+}
+.container.blogContent .social-networks .social-network .date {
+  font-weight: 400;
+  font-size: 16px;
+  color: #8b8b8b;
+}
+.container.blogContent .social-networks .social-network.mobile {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  .container.blogContent {
+    max-width: 360px;
+  }
+  .container.blogContent .blog .title {
+    width: 100%;
+    margin: 40px auto 16px auto;
+  }
+  .container.blogContent .blog .date {
+    font-size: 12px;
+    margin-bottom: 24px;
+  }
+  .container.blogContent .banner p {
+    width: 328px;
+    margin-top: 32px;
+  }
+  .container.blogContent .banner img {
+    width: 100%;
+  }
+  .container.blogContent .advice .questions {
+    max-width: 328px;
+  }
+  .container.blogContent .advice .questions img {
+    width: 100%;
+    margin-bottom: 48px;
+  }
+  .container.blogContent .advice .quiz {
+    max-width: 328px;
+    margin-bottom: 80px;
+  }
+  .container.blogContent .advice .quiz img {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .container.blogContent .advice .quiz p.last {
+    margin-top: 24px;
+  }
+  .container.blogContent .social-networks {
+    padding-top: 40px;
+    margin-bottom: 64px;
+    width: 100%;
+    gap: 40px;
+  }
+  .container.blogContent .social-networks .title {
+    font-size: 24px;
+    margin-bottom: 0;
+  }
+  .container.blogContent .social-networks .social-network {
+    width: 328px;
+    margin: 0 auto;
+    gap: 16px;
+    margin-bottom: 8px;
+  }
+  .container.blogContent .social-networks .social-network img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .container.blogContent .social-networks .social-network .subtitle {
+    font-size: 14px;
+  }
+  .container.blogContent .social-networks .social-network .text {
+    font-size: 20px;
+    line-height: 24px;
+    width: 328px;
+  }
+  .container.blogContent .social-networks .social-network .date {
+    font-size: 12px;
+  }
+  .container.blogContent .social-networks .social-network.mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 24px;
+  }
+}
+.container.contact {
+  background-color: #faf4e7;
+}
+.container.contact .mini-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-bottom: 64px;
+}
+.container.contact .mini-info .title {
+  font-weight: 400;
+  font-size: 34px;
+  margin: 48px auto;
+  color: #212121;
+}
+.container.contact .mini-info p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #343434;
+  width: 800px;
+}
+.container.contact .schedule {
+  width: 1216px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 112px auto;
+}
+.container.contact .schedule span {
+  font-weight: 400;
+  font-size: 20px;
+  color: #677480;
+  padding-bottom: 8px;
+}
+.container.contact .schedule h3 {
+  font-weight: 400;
+  font-size: 34px;
+  color: #212121;
+  padding-bottom: 68px;
+}
+.container.contact .schedule form.information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 60px;
+}
+.container.contact .schedule form.information .input-group {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 24px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.container.contact .schedule form.information .input-group label {
+  font-weight: 400;
+  font-size: 24px;
+  color: #212121;
+}
+.container.contact .schedule form.information .input-group label.last {
+  color: #354556;
+  font-size: 20px;
+}
+.container.contact .schedule form.information .input-group input {
+  min-width: 280px;
+  padding: 8px 0;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #9aa2ab;
+  outline: none;
+}
+.container.contact .schedule form.information .input-group input::-webkit-input-placeholder {
+  opacity: 0.4;
+  font-weight: 400;
+  font-size: 20px;
+  color: #ff8145;
+  text-align: center;
+}
+.container.contact .schedule form.information .input-group input::-moz-placeholder {
+  opacity: 0.4;
+  font-weight: 400;
+  font-size: 20px;
+  color: #ff8145;
+  text-align: center;
+}
+.container.contact .schedule form.information .input-group input:-ms-input-placeholder {
+  opacity: 0.4;
+  font-weight: 400;
+  font-size: 20px;
+  color: #ff8145;
+  text-align: center;
+}
+.container.contact .schedule form.information .input-group input::-ms-input-placeholder {
+  opacity: 0.4;
+  font-weight: 400;
+  font-size: 20px;
+  color: #ff8145;
+  text-align: center;
+}
+.container.contact .schedule form.information .input-group input::placeholder {
+  opacity: 0.4;
+  font-weight: 400;
+  font-size: 20px;
+  color: #ff8145;
+  text-align: center;
+}
+.container.contact .schedule form.information .input-group.select {
+  width: 100%;
+  margin-top: 44px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.container.contact .schedule form.information .input-group.select .select-box {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #677480;
+  border-radius: 4px;
+  accent-color: transparent;
+  cursor: pointer;
+}
+.container.contact .schedule form.information .input-group .inputWicon {
+  position: relative;
+}
+.container.contact .schedule form.information .input-group svg {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  -webkit-transform: rotate(90deg) translateX(-90%);
+          transform: rotate(90deg) translateX(-90%);
+}
+.container.contact .schedule form.information .input-group svg path {
+  stroke: #354556;
+}
+.container.contact .schedule form.information button {
+  padding: 15px 32px;
+  background: #43ba7f;
+  border-radius: 24px;
+  border: none;
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffffff;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 16px;
+}
+.container.contact .connection {
+  width: 1216px;
+  border-top: 1px solid #CCD1D5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 0 auto;
+}
+.container.contact .connection .column {
+  margin-top: 72px;
+  margin-bottom: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.container.contact .connection .column img {
+  width: 35px;
+  padding-bottom: 27px;
+}
+.container.contact .connection .column span {
+  width: 174px;
+}
+.container.contact .connection .column span.last {
+  padding-top: 16px;
+}
+
+@media (max-width: 576px) {
+  .container.contact .mini-info {
+    margin-bottom: 0;
+  }
+  .container.contact .mini-info .title {
+    font-size: 24px;
+    line-height: 30px;
+    margin: 32px auto;
+  }
+  .container.contact .mini-info p {
+    font-size: 16px;
+    line-height: 24px;
+    width: 328px;
+  }
+  .container.contact .schedule {
+    width: 328px;
+    margin: 64px auto;
+  }
+  .container.contact .schedule span {
+    font-size: 16px;
+  }
+  .container.contact .schedule h3 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .container.contact .schedule form.information {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-column-gap: 40px;
+       -moz-column-gap: 40px;
+            column-gap: 40px;
+  }
+  .container.contact .schedule form.information .input-group {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 32px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .container.contact .schedule form.information .input-group label {
+    font-size: 20px;
+    color: #212121;
+    text-align: left;
+  }
+  .container.contact .schedule form.information .input-group label.last {
+    font-size: 16px;
+  }
+  .container.contact .schedule form.information .input-group input {
+    width: 100%;
+    padding: 12px 0;
+  }
+  .container.contact .schedule form.information .input-group input::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+  .container.contact .schedule form.information .input-group input::-moz-placeholder {
+    font-size: 16px;
+  }
+  .container.contact .schedule form.information .input-group input:-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .container.contact .schedule form.information .input-group input::-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .container.contact .schedule form.information .input-group input::placeholder {
+    font-size: 16px;
+  }
+  .container.contact .schedule form.information .input-group.select {
+    margin: 8px 0 14px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 16px;
+  }
+  .container.contact .schedule form.information .input-group .inputWicon {
+    width: 100%;
+  }
+  .container.contact .connection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 56px;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 88px;
+  }
+  .container.contact .connection .column {
+    margin: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .container.contact .connection .column img {
+    width: 40px;
+  }
+  .container.contact .connection .column span.last {
+    padding-top: 12px;
+  }
+}

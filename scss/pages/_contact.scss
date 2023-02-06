@@ -1,0 +1,230 @@
+@import "../variables";
+.container {
+  &.contact {
+    background-color: #faf4e7;
+    .mini-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 64px;
+      .title {
+        font-weight: 400;
+        font-size: 34px;
+        margin: 48px auto;
+        color: #212121;
+      }
+      p {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 32px;
+        color: $clr-primary;
+        width: 800px;
+      }
+    }
+    .schedule {
+      width: 1216px;
+      display: flex;
+      flex-direction: column;
+      margin: 112px auto;
+      span {
+        font-weight: 400;
+        font-size: 20px;
+        color: $clr-black500;
+        padding-bottom: 8px;
+      }
+      h3 {
+        font-weight: 400;
+        font-size: 34px;
+        color: #212121;
+        padding-bottom: 68px;
+      }
+      form.information {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 60px;
+        .input-group {
+          width: 50%;
+          display: flex;
+          gap: 24px;
+          align-items: center;
+          label {
+            font-weight: 400;
+            font-size: 24px;
+            color: #212121;
+          }
+          label.last {
+            color: $clr-black600;
+            font-size: 20px;
+          }
+          input {
+            min-width: 280px;
+            padding: 8px 0;
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid #9aa2ab;
+            outline: none;
+            &::placeholder {
+              opacity: 0.4;
+              font-weight: 400;
+              font-size: 20px;
+              color: $clr-mainOrange;
+              text-align: center;
+            }
+          }
+          &.select {
+            width: 100%;
+            margin-top: 44px;
+            align-items: center;
+            .select-box {
+              width: 24px;
+              height: 24px;
+              border: 1px solid #677480;
+              border-radius: 4px;
+              accent-color: transparent;
+              cursor: pointer;
+            }
+          }
+          .inputWicon {
+            position: relative;
+          }
+          svg {
+            position: absolute;
+            right: 5%;
+            top: 50%;
+            transform: rotate(90deg) translateX(-90%);
+            path {
+              stroke: #354556;
+            }
+          }
+        }
+        button {
+          padding: 15px 32px;
+          background: #43ba7f;
+          border-radius: 24px;
+          border: none;
+          font-weight: 400;
+          font-size: 14px;
+          color: #ffffff;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 16px;
+        }
+      }
+    }
+    .connection {
+      width: 1216px;
+      border-top: 1px solid $clr-black300;
+      display: flex;
+      justify-content: space-evenly;
+      margin: 0 auto;
+      .column {
+        margin-top: 72px;
+        margin-bottom: 80px;
+        display: flex;
+        flex-direction: column;
+        img {
+          width: 35px;
+          padding-bottom: 27px;
+        }
+        span {
+          width: 174px;
+        }
+        span.last {
+          padding-top: 16px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    &.contact {
+      .mini-info {
+        margin-bottom: 0;
+        .title {
+          font-size: 24px;
+          line-height: 30px;
+          margin: 32px auto;
+        }
+        p {
+          font-size: 16px;
+          line-height: 24px;
+          width: 328px;
+        }
+      }
+      .schedule {
+        width: 328px;
+        margin: 64px auto;
+        span {
+          font-size: 16px;
+        }
+        h3 {
+          font-size: 24px;
+          line-height: 30px;
+        }
+        form.information {
+          display: flex;
+          flex-direction: column;
+          column-gap: 40px;
+          .input-group {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            align-items: flex-start;
+            label {
+              font-size: 20px;
+              color: #212121;
+              text-align: left;
+            }
+            label.last {
+              font-size: 16px;
+            }
+
+            input {
+              width: 100%;
+              padding: 12px 0;
+              &::placeholder {
+                font-size: 16px;
+              }
+            }
+            &.select {
+              margin: 8px 0 14px 0;
+              display: flex;
+              flex-direction: row;
+              gap: 16px;
+            }
+            .inputWicon{
+              width: 100%;
+            }
+          }
+          
+
+        }
+      }
+      .connection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 56px;
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 88px;
+        .column {
+          margin: 0;
+          align-items: center;
+          text-align: center;
+          img {
+            width: 40px;
+          }
+          span.last {
+            padding-top: 12px;
+          }
+        }
+      }
+    }
+  }
+}

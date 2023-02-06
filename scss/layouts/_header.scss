@@ -1,0 +1,85 @@
+@import "../variables";
+header {
+  padding: 24px 112px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid $clr-mainBG;
+  .logo {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    .title {
+      font-weight: 400;
+      font-size: 28px;
+      color: $clr-primary;
+    }
+  }
+  nav {
+    ul.navigation {
+      display: flex;
+      gap: 56px;
+      li {
+        &.link {
+          a {
+            font-weight: 400;
+            font-size: 16px;
+            color: $clr-primary;
+          }
+          &.active {
+            a {
+              padding: 15px 32px;
+              background-color: $clr-mainGreen;
+              border-radius: 24px;
+              font-size: 14px;
+              color: #fff;
+            }
+          }
+        }
+      }
+      button.hamburger {
+        display: none;
+      }
+    }
+  }
+}
+@media (max-width: 576px) {
+  header {
+    padding: 16px;
+    .logo {
+      img {
+        width: 33px;
+        height: 33px;
+      }
+      .title {
+        font-weight: 400;
+        font-size: 20px;
+      }
+    }
+    nav {
+      ul.navigation {
+        gap: 16px;
+        li {
+          &.link {
+            display: none;
+            a {
+            }
+            &.active {
+              display: block;
+              a {
+                padding: 11px 28px;
+              }
+            }
+          }
+        }
+        button.hamburger {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: transparent;
+          border: none;
+        }
+      }
+    }
+  }
+}

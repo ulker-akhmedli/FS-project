@@ -1,0 +1,182 @@
+@import "../variables";
+.container {
+  &.aboutUs {
+    .about {
+      margin: 42px 0 50px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 42px;
+      text-align: center;
+
+      h3 {
+        font-weight: 400;
+        font-size: 34px;
+      }
+      p {
+        font-weight: 400;
+        font-size: 16px;
+        max-width: 800px;
+        line-height: 36px;
+      }
+    }
+    .goals {
+      background-color: $clr-black700;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      padding: 56px 216px;
+
+      .column {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        img {
+          width: 40px;
+          height: 40px;
+        }
+        h5 {
+          margin-top: 16px;
+          font-weight: 400;
+          font-size: 20px;
+        }
+        p {
+          font-weight: 400;
+          line-height: 24px;
+          font-size: 16px;
+        }
+        &.mission {
+          p {
+            max-width: 485px;
+          }
+        }
+        &.vision {
+          p {
+            max-width: 385px;
+          }
+        }
+      }
+    }
+    .values {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 88px;
+      .content {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        color: $clr-primary;
+        h5.title {
+          margin-top: 80px;
+          margin-bottom: 24px;
+          font-weight: 400;
+          font-size: 24px;
+        }
+        .row {
+          display: flex;
+          gap: 24px;
+          background-color: #faf4e7;
+          border-radius: 16px;
+          padding: 28px;
+          min-width: 800px;
+          .circle {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            &.green {
+              background-color: $clr-mainGreen;
+            }
+            &.yellow {
+              background-color: $clr-mainYellow;
+            }
+            &.orange {
+              background-color: $clr-mainOrange;
+            }
+
+            &.violet {
+              background-color: $clr-mainViolet;
+            }
+            &.blue {
+              background-color: $clr-blue;
+            }
+          }
+          .text {
+            font-weight: 400;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    &.aboutUs {
+      .about {
+        margin: 32px 0 48px 0;
+        gap: 0;
+        p {
+          padding: 32px 16px 0px 16px;
+        }
+      }
+      .goals {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        gap: 16px;
+        .column {
+          align-items: center;
+          width: 360px;
+
+          h5 {
+            text-align: center;
+            margin-top: 8px;
+          }
+          img {
+            margin-top: 48px;
+          }
+          p {
+            width: 330px;
+            text-align: center;
+            margin-top: 0;
+            line-height: 24px;
+          }
+          &.mission {
+          }
+          &.vision {
+            margin-bottom: 48px;
+          }
+        }
+      }
+      .values {
+        margin-bottom: 72px;
+        .content {
+          gap: 16px;
+          h5.title {
+            margin: 0;
+            font-weight: 500;
+            text-align: center;
+            padding: 48px 0 24px 0;
+          }
+          .row {
+            gap: 16px;
+            padding: 16px;
+            min-width: auto;
+            border-radius: 8px;
+            margin: 0 16px 0 16px;
+            align-items: center;
+            .text {
+              font-size: 16px;
+            }
+
+            .circle {
+              width: 12px;
+              height: 12px;
+              flex: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
